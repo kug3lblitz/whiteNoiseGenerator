@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: table;
+  overflow: hidden; }
+
+a {
+  width: 90%;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  font: 600 1.6em Arial;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  transform: scale(1); }
+  a:before {
+    content: "Start "; }
+  a:hover {
+    transform: scale(1.1);
+    transition: 0.2s cubic-bezier(1, 0, 0, 1); }
+    a:hover:after {
+      content: "Adjust your volume, 'cause it's gonna get loud!";
+      display: block;
+      margin: 1em auto;
+      max-width: 32em;
+      text-transform: none;
+      font: italic 400 .5em cursive;
+      max-height: 99em;
+      transition: .3s; }
+  a.stop {
+    background: #fff;
+    color: #000; }
+    a.stop:before {
+      content: "Stop "; }
+    a.stop:after {
+      content: none;
+      max-height: 0; }
+
+/*# sourceMappingURL=style.css.map */
